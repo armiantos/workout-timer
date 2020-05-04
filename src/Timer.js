@@ -61,15 +61,16 @@ function Timer() {
     if (active)
       interval = setInterval(() => {
         setTimers((timers) =>
-          timers.map((val, index) => (!index ? val - 1 : val))
+          timers.map((val, index) => (!index ? val - 1 : val)).filter(val => val >= 0)
         );
-      }, 1000);
-
-    return function cleanup() {
-      if (timers[0] === 0) setTimers(timers.slice(1));
+      }, 1000); 
+    
+    if (timers.length < 1) setActive(false);
+    
+    return () => {
       clearInterval(interval);
     };
-  });
+  }, [active, timers.length]);
 
   return (
     <ThemeProvider theme={theme}>
