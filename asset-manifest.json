@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/workout-timer/static/css/main.881cbdde.chunk.css",
+    "main.js": "/workout-timer/static/js/main.a260104b.chunk.js",
+    "main.js.map": "/workout-timer/static/js/main.a260104b.chunk.js.map",
+    "runtime-main.js": "/workout-timer/static/js/runtime-main.6e2e8e74.js",
+    "runtime-main.js.map": "/workout-timer/static/js/runtime-main.6e2e8e74.js.map",
+    "static/js/2.715232c1.chunk.js": "/workout-timer/static/js/2.715232c1.chunk.js",
+    "static/js/2.715232c1.chunk.js.map": "/workout-timer/static/js/2.715232c1.chunk.js.map",
+    "index.html": "/workout-timer/index.html",
+    "precache-manifest.b401ecf4404f86d39710697f3515cfeb.js": "/workout-timer/precache-manifest.b401ecf4404f86d39710697f3515cfeb.js",
+    "service-worker.js": "/workout-timer/service-worker.js",
+    "static/css/main.881cbdde.chunk.css.map": "/workout-timer/static/css/main.881cbdde.chunk.css.map",
+    "static/js/2.715232c1.chunk.js.LICENSE.txt": "/workout-timer/static/js/2.715232c1.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/workout-timer/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e2e8e74.js",
+    "static/js/2.715232c1.chunk.js",
+    "static/css/main.881cbdde.chunk.css",
+    "static/js/main.a260104b.chunk.js"
+  ]
+}
