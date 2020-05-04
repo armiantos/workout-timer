@@ -113,11 +113,11 @@ function Timer() {
         />
         <Divider />
         <TimerInput addTimerCallback={addTimer} className={classes.m} />
-        <Divider />
+        {timers.length > 0 ? <Divider /> : null}
         {timers.map((duration, index) => (
           <Box key={index} className={classes.s}>
-            <Box>{duration}s</Box>
-            <Divider />
+            <h1>{duration}s</h1>
+            {index < timers.length - 1 ? <Divider/> : null}
           </Box>
         ))}
       </Card>
