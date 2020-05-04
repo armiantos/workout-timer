@@ -38,7 +38,7 @@ const useStyles = makeStyles({
   },
 });
 
-function TimerControls({active, toggleActiveCallback}) {
+function TimerControls({ active, toggleActiveCallback }) {
   return (
     <IconButton onClick={toggleActiveCallback}>
       {active ? <PauseIcon /> : <PlayArrowIcon />}
@@ -46,18 +46,24 @@ function TimerControls({active, toggleActiveCallback}) {
   );
 }
 
-function TimerInput({addTimerCallback}) {
+function TimerInput({ addTimerCallback }) {
   const defaultDuration = 30;
   const [duration, setDuration] = useState(defaultDuration);
 
   function clickHandler() {
     addTimerCallback(duration);
-    setDuration(defaultDuration);
   }
 
   return (
     <Container>
-      <TextField label="Time" onChange={(e) => setDuration(e.target.value)}/>
+      <TextField
+        label="Time"
+        onChange={(e) => setDuration(e.target.value)}
+        onKeyUp={(e) => {
+          e.preventDefault();
+          if (e.keyCode === 13) clickHandler();
+        }}
+      />
       <IconButton onClick={clickHandler}>
         <AddAlarmIcon />
       </IconButton>
